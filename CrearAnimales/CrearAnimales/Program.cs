@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using CrearAnimales.UI;
 using System.Windows.Forms;
 using CrearAnimales.Model;
+using CrearAnimales.Model.dietTypes;
+using CrearAnimales.Model.foodType;
+using CrearAnimales.UI;
 
 namespace CrearAnimales
 {
@@ -17,9 +15,34 @@ namespace CrearAnimales
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new AnimalCreated());
+            // Pruebas piloto
+            Carnivoro carnivoro = new Carnivoro();
+            TerrestrialAnimal leon = new TerrestrialAnimal("Leon", 10, 80, carnivoro);
+            AnimalFood vaca = new AnimalFood("Vaca" , 100);
+            VegetalesFood tomate = new VegetalesFood(100, "Tomate");
+            // Hay algo aca que no funciona el leon puede comer tomate y vaca /*Arreglado El problemas estaba en que el metodo canEat en carnivoro siempre devolvia true  */
+            Console.WriteLine("--------------------------------------------------------------------------------------------");
+            leon.eat(tomate);
+            Console.ReadLine();
+            Console.WriteLine("--------------------------------------------------------------------------------------------");
+            leon.eat(vaca);
+            Console.ReadLine();
+            Console.WriteLine("--------------------------------------------------------------------------------------------");
+            leon.move();
+            Console.ReadLine();
+            Console.WriteLine("--------------------------------------------------------------------------------------------");
+            leon.move();
+            Console.ReadLine();
+            Console.WriteLine("--------------------------------------------------------------------------------------------");
+            leon.sleep();
+            Console.ReadLine();
+            Console.WriteLine("--------------------------------------------------------------------------------------------");
+            leon.eat(tomate);
+            Console.ReadLine();
+            Console.WriteLine("--------------------------------------------------------------------------------------------");
+            leon.eat(vaca);
+            Console.ReadLine();
 
-            //TerrestrialAnimal animal = new TerrestrialAnimal("Leon", 10, 70, "Carnivoro");
-           
 
         }
     }

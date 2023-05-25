@@ -12,7 +12,5 @@ namespace CrearAnimales.Model
         void eat(IFood food);
         void move();
         void sleep();
-        void showAnimal();
-
     }
 }

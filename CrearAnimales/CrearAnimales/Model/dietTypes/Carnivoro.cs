@@ -12,7 +12,7 @@ namespace CrearAnimales.Model.dietTypes
     {
         public bool canEat(IFood food)
         {
-            return food is VegetalesFood || food is AnimalFood;
+            return food is AnimalFood;
         }
 
         public override string ToString()

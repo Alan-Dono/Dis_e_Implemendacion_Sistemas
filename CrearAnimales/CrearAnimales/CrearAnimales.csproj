@@ -45,9 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\NumberRandomGenerate.cs" />
     <Compile Include="Interfaces\IDiet.cs" />
     <Compile Include="Interfaces\IFood.cs" />
-    <Compile Include="Model\animals\Animal.cs" />
+    <Compile Include="Model\abstractClass\Animal.cs" />
     <Compile Include="Interfaces\IAcuatic.cs" />
     <Compile Include="Interfaces\IAeroTerrestrial.cs" />
     <Compile Include="Interfaces\IAnimal.cs" />
@@ -57,7 +58,7 @@
     <Compile Include="Model\dietTypes\Hervivoro.cs" />
     <Compile Include="Model\dietTypes\Omnivoro.cs" />
     <Compile Include="Model\foodType\AnimalFood.cs" />
-    <Compile Include="Model\foodType\FoodMaster.cs" />
+    <Compile Include="Model\abstractClass\FoodMaster.cs" />
     <Compile Include="Model\foodType\VegetalesFood.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
