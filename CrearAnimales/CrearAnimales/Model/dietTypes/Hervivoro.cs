@@ -10,9 +10,9 @@ namespace CrearAnimales.Model.dietTypes
 {
     internal class Hervivoro : IDiet
     {
-        public bool canEat(IFood food)
+        public bool canEat(IFood food) // Esta implementacion va a devolver true si el alimento que recibe por parametro es vegetal 
         {
-            return food is VegetalesFood || food is AnimalFood;
+            return food is VegetalesFood;
         }
 
         public override string ToString()

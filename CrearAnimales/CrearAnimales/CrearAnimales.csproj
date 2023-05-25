@@ -45,16 +45,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controller\AnimalController.cs" />
     <Compile Include="Helpers\NumberRandomGenerate.cs" />
     <Compile Include="Interfaces\IDiet.cs" />
     <Compile Include="Interfaces\IFood.cs" />
     <Compile Include="Model\abstractClass\Animal.cs" />
-    <Compile Include="Interfaces\IAcuatic.cs" />
-    <Compile Include="Interfaces\IAeroTerrestrial.cs" />
     <Compile Include="Interfaces\IAnimal.cs" />
-    <Compile Include="Interfaces\ITerrestrial.cs" />
+    <Compile Include="Model\animalsType\Air-GroundAnimal.cs" />
+    <Compile Include="Model\animalsType\AquaticAnimal.cs" />
     <Compile Include="Model\dietTypes\Carnivoro.cs" />
-    <Compile Include="Model\animals\TerrestrialAnimal.cs" />
+    <Compile Include="Model\animalsType\TerrestrialAnimal.cs" />
     <Compile Include="Model\dietTypes\Hervivoro.cs" />
     <Compile Include="Model\dietTypes\Omnivoro.cs" />
     <Compile Include="Model\foodType\AnimalFood.cs" />
@@ -86,8 +86,6 @@
       <DependentUpon>FoodCreate.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Controller\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

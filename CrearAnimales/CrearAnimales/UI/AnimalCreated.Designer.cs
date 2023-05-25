@@ -32,6 +32,9 @@ namespace CrearAnimales.UI
         {
             this.lvlTitle = new System.Windows.Forms.Label();
             this.dataPanel = new System.Windows.Forms.Panel();
+            this.btnCancelCreate = new System.Windows.Forms.Button();
+            this.btnNuevo = new System.Windows.Forms.Button();
+            this.btnCrearAnimal = new System.Windows.Forms.Button();
             this.rbOmnivoro = new System.Windows.Forms.RadioButton();
             this.rbHerviboro = new System.Windows.Forms.RadioButton();
             this.rbCarnivoro = new System.Windows.Forms.RadioButton();
@@ -45,7 +48,6 @@ namespace CrearAnimales.UI
             this.showPanel = new System.Windows.Forms.Panel();
             this.listView1 = new System.Windows.Forms.ListView();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnCrearAnimal = new System.Windows.Forms.Button();
             this.dataPanel.SuspendLayout();
             this.showPanel.SuspendLayout();
             this.SuspendLayout();
@@ -62,6 +64,8 @@ namespace CrearAnimales.UI
             // 
             // dataPanel
             // 
+            this.dataPanel.Controls.Add(this.btnCancelCreate);
+            this.dataPanel.Controls.Add(this.btnNuevo);
             this.dataPanel.Controls.Add(this.btnCrearAnimal);
             this.dataPanel.Controls.Add(this.rbOmnivoro);
             this.dataPanel.Controls.Add(this.rbHerviboro);
@@ -77,6 +81,37 @@ namespace CrearAnimales.UI
             this.dataPanel.Name = "dataPanel";
             this.dataPanel.Size = new System.Drawing.Size(388, 444);
             this.dataPanel.TabIndex = 1;
+            // 
+            // btnCancelCreate
+            // 
+            this.btnCancelCreate.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCancelCreate.Location = new System.Drawing.Point(261, 318);
+            this.btnCancelCreate.Name = "btnCancelCreate";
+            this.btnCancelCreate.Size = new System.Drawing.Size(100, 40);
+            this.btnCancelCreate.TabIndex = 12;
+            this.btnCancelCreate.Text = "Cancelar";
+            this.btnCancelCreate.UseVisualStyleBackColor = true;
+            // 
+            // btnNuevo
+            // 
+            this.btnNuevo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNuevo.Location = new System.Drawing.Point(261, 373);
+            this.btnNuevo.Name = "btnNuevo";
+            this.btnNuevo.Size = new System.Drawing.Size(100, 40);
+            this.btnNuevo.TabIndex = 11;
+            this.btnNuevo.Text = "Nuevo";
+            this.btnNuevo.UseVisualStyleBackColor = true;
+            this.btnNuevo.Click += new System.EventHandler(this.btnNuevo_Click);
+            // 
+            // btnCrearAnimal
+            // 
+            this.btnCrearAnimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCrearAnimal.Location = new System.Drawing.Point(261, 375);
+            this.btnCrearAnimal.Name = "btnCrearAnimal";
+            this.btnCrearAnimal.Size = new System.Drawing.Size(100, 40);
+            this.btnCrearAnimal.TabIndex = 10;
+            this.btnCrearAnimal.Text = "Crear";
+            this.btnCrearAnimal.UseVisualStyleBackColor = true;
             // 
             // rbOmnivoro
             // 
@@ -175,7 +210,6 @@ namespace CrearAnimales.UI
             this.lblComplete.Size = new System.Drawing.Size(272, 40);
             this.lblComplete.TabIndex = 0;
             this.lblComplete.Text = "Informacion Requerida";
-            this.lblComplete.Click += new System.EventHandler(this.lblComplete_Click);
             // 
             // showPanel
             // 
@@ -204,16 +238,6 @@ namespace CrearAnimales.UI
             this.label4.Size = new System.Drawing.Size(300, 38);
             this.label4.TabIndex = 1;
             this.label4.Text = "Animales Creados";
-            // 
-            // btnCrearAnimal
-            // 
-            this.btnCrearAnimal.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCrearAnimal.Location = new System.Drawing.Point(261, 375);
-            this.btnCrearAnimal.Name = "btnCrearAnimal";
-            this.btnCrearAnimal.Size = new System.Drawing.Size(90, 33);
-            this.btnCrearAnimal.TabIndex = 10;
-            this.btnCrearAnimal.Text = "Crear";
-            this.btnCrearAnimal.UseVisualStyleBackColor = true;
             // 
             // AnimalCreated
             // 
@@ -257,5 +281,7 @@ namespace CrearAnimales.UI
         private System.Windows.Forms.ListView listView1;
         private System.Windows.Forms.RadioButton rbOmnivoro;
         private System.Windows.Forms.Button btnCrearAnimal;
+        private System.Windows.Forms.Button btnCancelCreate;
+        private System.Windows.Forms.Button btnNuevo;
     }
 }
