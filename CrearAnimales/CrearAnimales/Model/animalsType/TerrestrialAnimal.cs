@@ -11,9 +11,13 @@ namespace CrearAnimales.Model
 {
     internal class TerrestrialAnimal : Animal, IAnimal
     {
-        private IDiet _diet { get; set; }
+        private IDiet _diet;
 
-        
+        public IDiet Diet
+        {
+            get { return _diet; }
+            set { _diet = value; }
+        }
         public TerrestrialAnimal(string especie, int age, int weight, IDiet diet) :
             base(especie, age, weight)
         {
@@ -70,6 +74,13 @@ namespace CrearAnimales.Model
             Console.WriteLine("La energia del animal despues de dormir es: " + base._energy);
         }
 
+        public override string ToString()
+        {
+            return base._especie +
+                    base._age +
+                    base._weight +
+                    _diet.ToString();                  
+        }
     } 
 }
 

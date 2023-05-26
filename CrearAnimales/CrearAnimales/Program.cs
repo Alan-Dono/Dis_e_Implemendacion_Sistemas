@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using CrearAnimales.Controller;
 using CrearAnimales.Model;
 using CrearAnimales.Model.dietTypes;
 using CrearAnimales.Model.foodType;
@@ -18,9 +19,9 @@ namespace CrearAnimales
             // Pruebas piloto
             Carnivoro carnivoro = new Carnivoro();
             TerrestrialAnimal leon = new TerrestrialAnimal("Leon", 10, 80, carnivoro);
-            AnimalFood vaca = new AnimalFood("Vaca" , 100);
+            /* AnimalFood vaca = new AnimalFood("Vaca" , 100);
             VegetalesFood tomate = new VegetalesFood(100, "Tomate");
-            // Hay algo aca que no funciona el leon puede comer tomate y vaca /*Arreglado El problemas estaba en que el metodo canEat en carnivoro siempre devolvia true  */
+            // Hay algo aca que no funciona el leon puede comer tomate y vaca /*Arreglado El problemas estaba en que el metodo canEat en carnivoro siempre devolvia true  
             Console.WriteLine("--------------------------------------------------------------------------------------------");
             leon.eat(tomate);
             Console.ReadLine();
@@ -42,8 +43,13 @@ namespace CrearAnimales
             Console.WriteLine("--------------------------------------------------------------------------------------------");
             leon.eat(vaca);
             Console.ReadLine();
+            // Pruebas de controladora
+            AnimalController cont = AnimalController.getInstance(); */
 
-
+            // Pruebas para la controladora
+            Console.WriteLine(leon.GetType().Name);
+            Console.ReadLine();
+    
         }
     }
 }

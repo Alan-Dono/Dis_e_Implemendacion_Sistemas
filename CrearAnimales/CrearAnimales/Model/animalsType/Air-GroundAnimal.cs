@@ -66,5 +66,12 @@ namespace CrearAnimales.Model.animalsType
             base.setEnergyPlus(50);
             Console.WriteLine("La energia del animal despues de dormir es: " + base._energy);
         }
+        public override string ToString()
+        {
+            return base._especie +
+                    base._age +
+                    base._weight +
+                    _diet.ToString();
+        }
     }
 }

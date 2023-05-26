@@ -32,6 +32,8 @@ namespace CrearAnimales.UI
         {
             this.lvlTitle = new System.Windows.Forms.Label();
             this.dataPanel = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cboxTiposAnimales = new System.Windows.Forms.ComboBox();
             this.btnCancelCreate = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.btnCrearAnimal = new System.Windows.Forms.Button();
@@ -64,6 +66,8 @@ namespace CrearAnimales.UI
             // 
             // dataPanel
             // 
+            this.dataPanel.Controls.Add(this.label5);
+            this.dataPanel.Controls.Add(this.cboxTiposAnimales);
             this.dataPanel.Controls.Add(this.btnCancelCreate);
             this.dataPanel.Controls.Add(this.btnNuevo);
             this.dataPanel.Controls.Add(this.btnCrearAnimal);
@@ -81,6 +85,29 @@ namespace CrearAnimales.UI
             this.dataPanel.Name = "dataPanel";
             this.dataPanel.Size = new System.Drawing.Size(388, 444);
             this.dataPanel.TabIndex = 1;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Bodoni MT", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(39, 202);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(54, 27);
+            this.label5.TabIndex = 14;
+            this.label5.Text = "Tipo";
+            // 
+            // cboxTiposAnimales
+            // 
+            this.cboxTiposAnimales.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboxTiposAnimales.FormattingEnabled = true;
+            this.cboxTiposAnimales.Items.AddRange(new object[] {
+            "Terrestre",
+            "Acuatico",
+            "AeroTerrestre"});
+            this.cboxTiposAnimales.Location = new System.Drawing.Point(125, 200);
+            this.cboxTiposAnimales.Name = "cboxTiposAnimales";
+            this.cboxTiposAnimales.Size = new System.Drawing.Size(236, 33);
+            this.cboxTiposAnimales.TabIndex = 13;
             // 
             // btnCancelCreate
             // 
@@ -151,23 +178,25 @@ namespace CrearAnimales.UI
             // 
             // txtEdad
             // 
-            this.txtEdad.Location = new System.Drawing.Point(110, 129);
+            this.txtEdad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEdad.Location = new System.Drawing.Point(125, 116);
             this.txtEdad.Name = "txtEdad";
-            this.txtEdad.Size = new System.Drawing.Size(236, 22);
+            this.txtEdad.Size = new System.Drawing.Size(236, 30);
             this.txtEdad.TabIndex = 6;
             // 
             // txtPeso
             // 
-            this.txtPeso.Location = new System.Drawing.Point(115, 196);
+            this.txtPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPeso.Location = new System.Drawing.Point(125, 157);
             this.txtPeso.Name = "txtPeso";
-            this.txtPeso.Size = new System.Drawing.Size(236, 22);
+            this.txtPeso.Size = new System.Drawing.Size(236, 30);
             this.txtPeso.TabIndex = 5;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Bodoni MT Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(24, 191);
+            this.label3.Location = new System.Drawing.Point(34, 159);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 27);
             this.label3.TabIndex = 4;
@@ -178,7 +207,7 @@ namespace CrearAnimales.UI
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Bodoni MT Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(24, 129);
+            this.label2.Location = new System.Drawing.Point(39, 123);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(47, 27);
             this.label2.TabIndex = 3;
@@ -186,16 +215,17 @@ namespace CrearAnimales.UI
             // 
             // txtEspecie
             // 
-            this.txtEspecie.Location = new System.Drawing.Point(110, 71);
+            this.txtEspecie.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEspecie.Location = new System.Drawing.Point(125, 77);
             this.txtEspecie.Name = "txtEspecie";
-            this.txtEspecie.Size = new System.Drawing.Size(236, 22);
+            this.txtEspecie.Size = new System.Drawing.Size(236, 30);
             this.txtEspecie.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Bodoni MT Condensed", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(24, 66);
+            this.label1.Location = new System.Drawing.Point(39, 79);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(67, 27);
             this.label1.TabIndex = 1;
@@ -283,5 +313,7 @@ namespace CrearAnimales.UI
         private System.Windows.Forms.Button btnCrearAnimal;
         private System.Windows.Forms.Button btnCancelCreate;
         private System.Windows.Forms.Button btnNuevo;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cboxTiposAnimales;
     }
 }

@@ -10,21 +10,62 @@ namespace CrearAnimales.Model
     public abstract class Animal
     {
         private static int _contadorId = 0;
-        private int _id { get; } // ID automatico a cada animal idependientemente de que tipo sean
-        protected string _especie { get; } // Solo getter porque no va a cambiar de especie
-        protected int _energy { get; set; } = 100;
-        protected int _positionX { get; set; } = 0;
-        protected int _positionY { get; set; } = 0;
-        protected int _age { get; set; }
-        protected int _weigth { get; set; }
+        protected int _id; // ID automatico a cada animal idependientemente de que tipo sean
+        protected string _especie; // Solo getter porque no va a cambiar de especie
+        protected int _energy = 100;
+        protected int _positionX = 0;
+        protected int _positionY = 0;
+        protected int _age;
+        protected int _weight;
 
+        public int Id
+        {
+            get { return _id; }
+            set { _id = value; }
+        }
+
+        public string Especie
+        {
+            get { return _especie; }
+            set { _especie = value; }
+        }
+
+        public int Energy
+        {
+            get { return _energy; }
+            set { _energy = value; }
+        }
+
+        public int PositionX
+        {
+            get { return _positionX; }
+            set { _positionX = value; }
+        }
+
+        public int PositionY
+        {
+            get { return _positionY; }
+            set { _positionY = value; }
+        }
+
+        public int Age
+        {
+            get { return _age; }
+            set { _age = value; }
+        }
+
+        public int Weight
+        {
+            get { return _weight; }
+            set { _weight = value; }
+        }
         public Animal(string especie, int age, int weigth)
         {
             _contadorId++;
             _id = _contadorId;
             _especie = especie;
             _age = age;
-            _weigth = weigth;
+            _weight = weigth;
         }
 
         /*Por ahora otra clase no tiene este comportamiento (set/get energy) por eso se lo asigno a la clase y no a una interface ya que un alimento
