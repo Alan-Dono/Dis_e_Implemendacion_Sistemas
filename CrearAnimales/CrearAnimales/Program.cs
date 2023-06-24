@@ -19,7 +19,7 @@ namespace CrearAnimales
             // Pruebas piloto
             Carnivoro carnivoro = new Carnivoro();
             TerrestrialAnimal leon = new TerrestrialAnimal("Leon", 10, 80, carnivoro);
-            /* AnimalFood vaca = new AnimalFood("Vaca" , 100);
+            AnimalFood vaca = new AnimalFood("Vaca", 100);
             VegetalesFood tomate = new VegetalesFood(100, "Tomate");
             // Hay algo aca que no funciona el leon puede comer tomate y vaca /*Arreglado El problemas estaba en que el metodo canEat en carnivoro siempre devolvia true  
             Console.WriteLine("--------------------------------------------------------------------------------------------");
@@ -44,12 +44,13 @@ namespace CrearAnimales
             leon.eat(vaca);
             Console.ReadLine();
             // Pruebas de controladora
-            AnimalController cont = AnimalController.getInstance(); */
+            //AnimalController cont = AnimalController.getInstance();
+            //cont.showAnimalsForConsole();
+            //Console.ReadLine();
 
             // Pruebas para la controladora
-            Console.WriteLine(leon.GetType().Name);
-            Console.ReadLine();
-    
+
+
         }
     }
 }

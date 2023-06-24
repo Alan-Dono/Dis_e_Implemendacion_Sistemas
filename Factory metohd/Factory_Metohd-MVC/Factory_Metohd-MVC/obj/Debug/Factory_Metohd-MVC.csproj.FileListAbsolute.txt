@@ -1,0 +1,11 @@
+C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\Factory metohd\Factory_Metohd-MVC\Factory_Metohd-MVC\bin\Debug\Factory_Metohd-MVC.exe.config
+C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\Factory metohd\Factory_Metohd-MVC\Factory_Metohd-MVC\bin\Debug\Factory_Metohd-MVC.exe
+C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\Factory metohd\Factory_Metohd-MVC\Factory_Metohd-MVC\bin\Debug\Factory_Metohd-MVC.pdb
+C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\Factory metohd\Factory_Metohd-MVC\Factory_Metohd-MVC\obj\Debug\Factory_Metohd-MVC.csproj.AssemblyReference.cache
+C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\Factory metohd\Factory_Metohd-MVC\Factory_Metohd-MVC\obj\Debug\Factory_Metohd-MVC.csproj.SuggestedBindingRedirects.cache
+C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\Factory metohd\Factory_Metohd-MVC\Factory_Metohd-MVC\obj\Debug\Factory_Metohd_MVC.Form1.resources
+C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\Factory metohd\Factory_Metohd-MVC\Factory_Metohd-MVC\obj\Debug\Factory_Metohd_MVC.Properties.Resources.resources
+C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\Factory metohd\Factory_Metohd-MVC\Factory_Metohd-MVC\obj\Debug\Factory_Metohd-MVC.csproj.GenerateResource.cache
+C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\Factory metohd\Factory_Metohd-MVC\Factory_Metohd-MVC\obj\Debug\Factory_Metohd-MVC.csproj.CoreCompileInputs.cache
+C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\Factory metohd\Factory_Metohd-MVC\Factory_Metohd-MVC\obj\Debug\Factory_Metohd-MVC.exe
+C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\Factory metohd\Factory_Metohd-MVC\Factory_Metohd-MVC\obj\Debug\Factory_Metohd-MVC.pdb
