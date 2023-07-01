@@ -1,54 +1,56 @@
 ﻿using System;
 using System.Windows.Forms;
-using CrearAnimales.Controller;
-using CrearAnimales.Model;
-using CrearAnimales.Model.dietTypes;
-using CrearAnimales.Model.foodType;
-using CrearAnimales.UI;
+using EntitiesLayer.ConcretClass;
+using EntitiesLayer.Interfaces;
+using BusinessLogicLayer;
+using EntitiesLayer.ConcretClass.Atmosphere.Enviroment;
+using EntitiesLayer.ConcretClass.atmosphere;
+using EntitiesLayer.ConcretClass.EntityType;
+using EntitiesLayer.Helpers;
 
 namespace CrearAnimales
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new AnimalCreated());
-            // Pruebas piloto
-            Carnivoro carnivoro = new Carnivoro();
-            TerrestrialAnimal leon = new TerrestrialAnimal("Leon", 10, 80, carnivoro);
-            AnimalFood vaca = new AnimalFood("Vaca", 100);
-            VegetalesFood tomate = new VegetalesFood(100, "Tomate");
-            // Hay algo aca que no funciona el leon puede comer tomate y vaca /*Arreglado El problemas estaba en que el metodo canEat en carnivoro siempre devolvia true  
-            Console.WriteLine("--------------------------------------------------------------------------------------------");
-            leon.eat(tomate);
-            Console.ReadLine();
-            Console.WriteLine("--------------------------------------------------------------------------------------------");
-            leon.eat(vaca);
-            Console.ReadLine();
-            Console.WriteLine("--------------------------------------------------------------------------------------------");
-            leon.move();
-            Console.ReadLine();
-            Console.WriteLine("--------------------------------------------------------------------------------------------");
-            leon.move();
-            Console.ReadLine();
-            Console.WriteLine("--------------------------------------------------------------------------------------------");
-            leon.sleep();
-            Console.ReadLine();
-            Console.WriteLine("--------------------------------------------------------------------------------------------");
-            leon.eat(tomate);
-            Console.ReadLine();
-            Console.WriteLine("--------------------------------------------------------------------------------------------");
-            leon.eat(vaca);
-            Console.ReadLine();
-            // Pruebas de controladora
-            //AnimalController cont = AnimalController.getInstance();
-            //cont.showAnimalsForConsole();
-            //Console.ReadLine();
+            Application.Run(new FrmAnimalList());
+            //Application.Run(new FrmAnimalCreated());
 
-            // Pruebas para la controladora
+            /*//---------------------- Pruebas de Movilidad e ejes X , Y -------------------------
+            Animal animal1 = new Animal("Leon", 12, 120, new Carnivoro(), new Sheet());
+            Animal animal2 = new Animal("Oso", 8, 90, new Carnivoro(), new Forest());
+            Animal animal3 = new Animal("Cebra", 2, 35, new Herbivoro(), new Sheet());
+            AnimalBLL.AddAnimal(animal1);
+            AnimalBLL.AddAnimal(animal2);
+            AnimalBLL.AddAnimal(animal3);
+           *//* foreach (Animal animal in AnimalBLL.GetAllAnimals())
+            {
+                Console.WriteLine(animal.ToString() + "\n");
+                animal.Move();
+                Console.WriteLine(animal.ToString() + "\n");
+
+            }
+            Console.ReadLine();*//*
+            //---------------------------------------------------------------------------------
+            //--------------------------Pruebas de datos-----------------------
+            Vegetable Tomate = new Vegetable("Tomate", 50);
+            Vegetable Pasto = new Vegetable("Pasto", 10);
+            *//*   Console.WriteLine(Tomate.GetName());
+               Console.WriteLine(Tomate.ToString());
+               Console.WriteLine(Tomate.GetType().Name);
+               Console.WriteLine(animal1.GetName());
+               Console.WriteLine(animal1.ToString());
+               Console.WriteLine(animal1.GetType().Name);
+               Console.ReadLine();*//*
+            //--------------------------------- Pruebas Feed -------------------------------
+            animal1.Feed(Tomate);
+            animal1.Feed(animal1);
+            //Console.ReadLine();
+*/
 
 
         }

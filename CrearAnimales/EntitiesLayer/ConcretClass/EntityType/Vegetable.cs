@@ -1,22 +1,22 @@
-﻿using EntitiesLayer.Interfaces;
+﻿using System;
+using EntitiesLayer.Interfaces;
 
-namespace EntitiesLayer.ConcretClass
+
+namespace EntitiesLayer.ConcretClass.EntityType
 {
-    internal class VegetalesFood : IFood
+    public class Vegetable : IFood
     {
-        private int id;
-        private string _name;
         private int _calories;
+        private string _name;
 
-        public int Id { get => id; set => id = value; }
-        public string Name { get => _name; set => _name = value; }
         public int Calories { get => _calories; set => _calories = value; }
-        public VegetalesFood(string name, int caories)
+        public string Name { get => _name; set => _name = value; }
+        public Vegetable(string name, int calorias)
         {
             Name = name;
-            Calories = caories;
+            Calories = calorias;
         }
-                
+
         public int getCalories()
         {
             return Calories;

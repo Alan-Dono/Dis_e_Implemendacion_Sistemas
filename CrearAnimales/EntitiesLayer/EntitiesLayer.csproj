@@ -32,6 +32,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -41,34 +42,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AbstractClass\Animal.cs" />
-    <Compile Include="AbstractClass\FoodMaster.cs" />
-    <Compile Include="ConcretClass\animalsType\ProyectoAnterior\Air-GroundAnimal.cs" />
-    <Compile Include="ConcretClass\animalsType\Animal.cs" />
-    <Compile Include="ConcretClass\animalsType\ProyectoAnterior\AquaticAnimal.cs" />
-    <Compile Include="ConcretClass\animalsType\ProyectoAnterior\TerrestrialAnimal.cs" />
-    <Compile Include="ConcretClass\atmosphere\Aerial.cs" />
-    <Compile Include="ConcretClass\atmosphere\City.cs" />
-    <Compile Include="ConcretClass\atmosphere\Desert.cs" />
-    <Compile Include="ConcretClass\atmosphere\Forest.cs" />
-    <Compile Include="ConcretClass\atmosphere\Mountain.cs" />
-    <Compile Include="ConcretClass\atmosphere\Underground.cs" />
-    <Compile Include="ConcretClass\atmosphere\Water.cs" />
-    <Compile Include="ConcretClass\dietTypes\Carnivoro.cs" />
-    <Compile Include="ConcretClass\dietTypes\Herbivoro.cs" />
-    <Compile Include="ConcretClass\dietTypes\Omnivoro.cs" />
-    <Compile Include="ConcretClass\foodType\AnimalFood.cs" />
-    <Compile Include="ConcretClass\foodType\InsectFood.cs" />
-    <Compile Include="ConcretClass\foodType\VegetalesFood.cs" />
+    <Compile Include="ConcretClass\Atmosphere\Enviroment\Sheet.cs" />
+    <Compile Include="ConcretClass\EntityType\Animal.cs" />
+    <Compile Include="ConcretClass\Atmosphere\Enviroment\Aerial.cs" />
+    <Compile Include="ConcretClass\Atmosphere\Enviroment\City.cs" />
+    <Compile Include="ConcretClass\Atmosphere\Enviroment\Desert.cs" />
+    <Compile Include="ConcretClass\Atmosphere\Enviroment\Forest.cs" />
+    <Compile Include="ConcretClass\Atmosphere\Enviroment\Mountain.cs" />
+    <Compile Include="ConcretClass\Atmosphere\Enviroment\Underground.cs" />
+    <Compile Include="ConcretClass\Atmosphere\Enviroment\Ocean.cs" />
+    <Compile Include="ConcretClass\Atmosphere\Terrains\Water.cs" />
+    <Compile Include="ConcretClass\Atmosphere\Terrains\Air.cs" />
+    <Compile Include="ConcretClass\Atmosphere\Terrains\Land.cs" />
+    <Compile Include="ConcretClass\DietTypes\Carnivoro.cs" />
+    <Compile Include="ConcretClass\DietTypes\Herbivoro.cs" />
+    <Compile Include="ConcretClass\DietTypes\Omnivoro.cs" />
+    <Compile Include="ConcretClass\EntityType\ValidadorAnimalModel.cs" />
+    <Compile Include="ConcretClass\EntityType\Vegetable.cs" />
     <Compile Include="Factories\Factory.cs" />
     <Compile Include="Helpers\NumberRandomGenerate.cs" />
-    <Compile Include="Interfaces\IAtmosphere.cs" />
+    <Compile Include="Interfaces\IEnviroment.cs" />
     <Compile Include="Interfaces\IEnergy.cs" />
     <Compile Include="Interfaces\IAnimal.cs" />
     <Compile Include="Interfaces\IDiet.cs" />
     <Compile Include="Interfaces\IFood.cs" />
     <Compile Include="Interfaces\IPositionable.cs" />
+    <Compile Include="Interfaces\ITerrains.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

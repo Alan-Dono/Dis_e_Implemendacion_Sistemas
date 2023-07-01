@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using CrearAnimales.Helpers;
 using CrearAnimales.Interfaces;
 
-namespace CrearAnimales.Model.animalsType
+namespace EntitiesLayer.ConcretClass.
 {
     internal class Air_GroundAnimal : Animal, IAnimal
     {

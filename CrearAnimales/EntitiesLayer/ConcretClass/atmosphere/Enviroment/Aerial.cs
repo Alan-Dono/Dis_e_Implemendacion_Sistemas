@@ -5,7 +5,7 @@ using EntitiesLayer.Interfaces;
 
 namespace EntitiesLayer.ConcretClass.atmosphere
 {
-    internal class Aerial : IEnviroment
+    public class Aerial : IEnviroment
     {
         private int id;
         private string _name;
@@ -21,6 +21,10 @@ namespace EntitiesLayer.ConcretClass.atmosphere
         public IEnviroment getType()
         {
             return this;
+        }
+        public override string ToString()
+        {
+            return "Aerio";
         }
     }
 }

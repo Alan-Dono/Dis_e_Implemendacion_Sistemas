@@ -1,12 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace CrearAnimales.Helpers
+namespace EntitiesLayer.Helpers
 {
-    internal class NumberRandomGenerate
+    public class NumberRandomGenerate
     {
         private static Random _random = new Random();
 

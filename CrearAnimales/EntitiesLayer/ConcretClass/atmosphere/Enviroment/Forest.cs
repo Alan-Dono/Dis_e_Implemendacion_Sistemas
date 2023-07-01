@@ -4,7 +4,7 @@ using EntitiesLayer.Interfaces;
 
 namespace EntitiesLayer.ConcretClass.atmosphere
 {
-    internal class Forest : IEnviroment
+    public class Forest : IEnviroment
     {
         private int id;
         private string _name;
@@ -20,6 +20,10 @@ namespace EntitiesLayer.ConcretClass.atmosphere
         public IEnviroment getType()
         {
             return this;
+        }
+        public override string ToString()
+        {
+            return "Bosque";
         }
     }
 }

@@ -1,8 +1,8 @@
-﻿using EntitiesLayer.Interfaces;
+﻿/*using EntitiesLayer.Interfaces;
 
 namespace CrearAnimales.Model
 {
-    internal abstract class Factory
+    public abstract class Factory
     {
         public static IAnimal createAnimal(string especie, int edad, int peso, string tipoAnimal, string diet)
         {
@@ -58,4 +58,4 @@ namespace CrearAnimales.Model
             return dieta;
         }
     }
-}
+}*/

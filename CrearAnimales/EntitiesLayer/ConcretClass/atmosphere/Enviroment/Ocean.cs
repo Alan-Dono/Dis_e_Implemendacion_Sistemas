@@ -20,5 +20,9 @@ namespace EntitiesLayer.ConcretClass.atmosphere
         {
             return this;
         }
+        public override string ToString()
+        {
+            return "Oceano";
+        }
     }
 }

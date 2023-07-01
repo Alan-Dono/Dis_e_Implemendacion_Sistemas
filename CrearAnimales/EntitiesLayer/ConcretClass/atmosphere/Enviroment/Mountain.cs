@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 using EntitiesLayer.ConcretClass.atmosphere.Terrains;
 using EntitiesLayer.Interfaces;
 
 namespace EntitiesLayer.ConcretClass.atmosphere
 {
-    internal class Mountain : IEnviroment
+    public class Mountain : IEnviroment
     {
         private int id;
         private string _name;
@@ -23,6 +19,10 @@ namespace EntitiesLayer.ConcretClass.atmosphere
         public IEnviroment getType()
         {
             return this;
+        }
+        public override string ToString()
+        {
+            return "Montaña";
         }
     }
 }

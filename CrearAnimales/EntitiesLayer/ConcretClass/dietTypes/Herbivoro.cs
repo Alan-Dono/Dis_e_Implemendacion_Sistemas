@@ -1,12 +1,13 @@
-﻿using EntitiesLayer.Interfaces;
+﻿using EntitiesLayer.ConcretClass.EntityType;
+using EntitiesLayer.Interfaces;
 
 namespace EntitiesLayer.ConcretClass
 {
-    internal class Herbivoro : IDiet
+    public class Herbivoro : IDiet
     {
         public bool canEat(IFood food) // Esta implementacion va a devolver true si el alimento que recibe por parametro es vegetal 
         {
-            return food is VegetalesFood;
+            return food is Vegetable;
         }
 
         public override string ToString()

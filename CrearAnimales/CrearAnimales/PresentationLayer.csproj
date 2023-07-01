@@ -34,6 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
@@ -45,6 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FrmAnimalCreated.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnimalCreated.Designer.cs">
+      <DependentUpon>FrmAnimalCreated.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnimalList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnimalList.Designer.cs">
+      <DependentUpon>FrmAnimalList.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -60,6 +73,14 @@
       <Project>{7d8ff6ab-f17d-4d8e-bc41-ad47d38b9791}</Project>
       <Name>EntitiesLayer</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FrmAnimalCreated.resx">
+      <DependentUpon>FrmAnimalCreated.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAnimalList.resx">
+      <DependentUpon>FrmAnimalList.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
