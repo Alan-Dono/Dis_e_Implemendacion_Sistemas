@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationLayer", "CrearA
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccesLayer", "DataAccesLayer\DataAccesLayer.csproj", "{301B905F-7BA2-4182-9BC6-6C72B1D09327}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BiusinessLogicLayer", "BiusinessLogicLayer\BiusinessLogicLayer.csproj", "{19E87CB2-3895-4CA3-85A8-11DF23065BED}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BusinessLogicLayer", "BiusinessLogicLayer\BusinessLogicLayer.csproj", "{19E87CB2-3895-4CA3-85A8-11DF23065BED}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EntitiesLayer", "EntitiesLayer\EntitiesLayer.csproj", "{7D8FF6AB-F17D-4D8E-BC41-AD47D38B9791}"
 EndProject

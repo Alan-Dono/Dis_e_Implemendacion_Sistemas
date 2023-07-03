@@ -1,6 +1,6 @@
 ﻿
 
-namespace EntitiesLayer.Interfaces
+namespace CrearAnimales.EntitiesLayer.Interfaces
 {
     public interface IEnergy
     {

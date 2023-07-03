@@ -3,7 +3,6 @@ C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\CrearAnim
 C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\CrearAnimales\CrearAnimales\obj\Debug\PresentationLayer.csproj.CoreCompileInputs.cache
 C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\CrearAnimales\CrearAnimales\obj\Debug\CrearAnimales.exe
 C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\CrearAnimales\CrearAnimales\obj\Debug\CrearAnimales.pdb
-C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\CrearAnimales\CrearAnimales\obj\Debug\CrearAnimales.FrmAnimalList.resources
 C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\CrearAnimales\CrearAnimales\obj\Debug\PresentationLayer.csproj.GenerateResource.cache
 C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\CrearAnimales\CrearAnimales\bin\Debug\CrearAnimales.exe.config
 C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\CrearAnimales\CrearAnimales\bin\Debug\CrearAnimales.exe
@@ -15,4 +14,5 @@ C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\CrearAnim
 C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\CrearAnimales\CrearAnimales\bin\Debug\EntitiesLayer.pdb
 C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\CrearAnimales\CrearAnimales\bin\Debug\DataAccesLayer.pdb
 C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\CrearAnimales\CrearAnimales\obj\Debug\PresentationLayer.csproj.CopyComplete
-C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\CrearAnimales\CrearAnimales\obj\Debug\CrearAnimales.FrmAnimalCreated.resources
+C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\CrearAnimales\CrearAnimales\obj\Debug\CrearAnimales.PresentationLayer.FrmAnimalCreated.resources
+C:\Users\ALAN\Desktop\Tercer año\Diseño e implementacion de sistemas\CrearAnimales\CrearAnimales\obj\Debug\CrearAnimales.PresentationLayer.FrmAnimalList.resources

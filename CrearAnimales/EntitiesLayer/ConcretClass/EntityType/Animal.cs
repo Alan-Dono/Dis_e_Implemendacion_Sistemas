@@ -1,13 +1,9 @@
 ﻿using System;
-using EntitiesLayer.Interfaces;
-using EntitiesLayer.Helpers;
 using System.ComponentModel.DataAnnotations;
+using CrearAnimales.EntitiesLayer.Helpers;
+using CrearAnimales.EntitiesLayer.Interfaces;
 
-
-
-
-
-namespace EntitiesLayer.ConcretClass
+namespace CrearAnimales.EntitiesLayer.ConcretClass.EntityType
 {
     public class Animal : IAnimal, IFood, IEnergy, IPositionable
     {
@@ -48,8 +44,8 @@ namespace EntitiesLayer.ConcretClass
         [Range(0, 100, ErrorMessage = "La energía debe estar entre 0 y 100.")]
         public int Energy
         {
-            get => _energy;
-            set => _energy = value;
+            get { return _energy; }
+            set { _energy = value; }
         }
 
         [Required(ErrorMessage = "El campo Posición X es requerido.")]
@@ -57,8 +53,8 @@ namespace EntitiesLayer.ConcretClass
         [Range(0, 1000, ErrorMessage = "La posición X debe estar entre 0 y 1000.")]
         public int PositionX
         {
-            get => _positionX;
-            set => _positionX = value;
+            get { return _positionX; }
+            set { _positionX = value; }
         }
 
         [Required(ErrorMessage = "El campo Posición Y es requerido.")]
@@ -66,8 +62,8 @@ namespace EntitiesLayer.ConcretClass
         [Range(0, 1000, ErrorMessage = "La posición Y debe estar entre 0 y 1000.")]
         public int PositionY
         {
-            get => _positionY;
-            set => _positionY = value;
+            get { return _positionY; }
+            set { _positionY = value; }
         }
 
         [Required(ErrorMessage = "El campo Posición Z es requerido.")]
@@ -75,8 +71,8 @@ namespace EntitiesLayer.ConcretClass
         [Range(-100, 100, ErrorMessage = "La posición Z debe estar entre -100 y 100.")]
         public int PositionZ
         {
-            get => _positionZ;
-            set => _positionZ = value;
+            get { return _positionZ; }
+            set { _positionZ = value; }
         }
 
         [Required(ErrorMessage = "El campo Edad es requerido.")]
@@ -93,8 +89,8 @@ namespace EntitiesLayer.ConcretClass
         [Range(0, 9000, ErrorMessage = "El peso debe estar entre 0 y 9000.")]
         public int Weight
         {
-            get => _weight;
-            set => _weight = value;
+            get { return _weight; }
+            set { _weight = value; }
         }
 
         public IDiet Diet
@@ -102,6 +98,7 @@ namespace EntitiesLayer.ConcretClass
             get { return _diet; }
             set { _diet = value; }
         }
+
         public IEnviroment Enviroment
         {
             get { return _enviroment; }

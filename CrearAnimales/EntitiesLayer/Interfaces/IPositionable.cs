@@ -1,5 +1,5 @@
 ﻿
-namespace EntitiesLayer.Interfaces
+namespace CrearAnimales.EntitiesLayer.Interfaces
 {
     internal interface IPositionable
     {

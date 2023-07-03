@@ -1,9 +1,9 @@
-﻿using EntitiesLayer.ConcretClass;
-using EntitiesLayer.ConcretClass.Atmosphere.Enviroment;
-using EntitiesLayer.ConcretClass.atmosphere;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
+using CrearAnimales.EntitiesLayer.ConcretClass.Atmosphere.Enviroment;
+using CrearAnimales.EntitiesLayer.ConcretClass.DietTypes;
+using CrearAnimales.EntitiesLayer.ConcretClass.EntityType;
 
-namespace DataAccesLayer
+namespace CrearAnimales.DataAccesLayer
 {
     public class AnimalStore
     {

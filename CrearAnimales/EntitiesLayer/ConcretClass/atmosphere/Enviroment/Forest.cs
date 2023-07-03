@@ -1,8 +1,7 @@
-﻿
-using EntitiesLayer.ConcretClass.atmosphere.Terrains;
-using EntitiesLayer.Interfaces;
+﻿using CrearAnimales.EntitiesLayer.ConcretClass.Atmosphere.Terrains;
+using CrearAnimales.EntitiesLayer.Interfaces;
 
-namespace EntitiesLayer.ConcretClass.atmosphere
+namespace CrearAnimales.EntitiesLayer.ConcretClass.Atmosphere.Enviroment
 {
     public class Forest : IEnviroment
     {

@@ -1,8 +1,7 @@
-﻿using System;
-using EntitiesLayer.Interfaces;
+﻿using CrearAnimales.EntitiesLayer.Interfaces;
 
 
-namespace EntitiesLayer.ConcretClass.EntityType
+namespace CrearAnimales.EntitiesLayer.ConcretClass.EntityType
 {
     public class Vegetable : IFood
     {

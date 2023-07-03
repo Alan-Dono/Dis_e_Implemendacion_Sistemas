@@ -1,7 +1,8 @@
-﻿using EntitiesLayer.ConcretClass.atmosphere.Terrains;
-using EntitiesLayer.Interfaces;
+﻿using CrearAnimales.EntitiesLayer.ConcretClass.Atmosphere.Enviroment.Terrains;
+using CrearAnimales.EntitiesLayer.Interfaces;
 
-namespace EntitiesLayer.ConcretClass.atmosphere
+
+namespace CrearAnimales.EntitiesLayer.ConcretClass.Atmosphere.Enviroment
 {
     public class Ocean : IEnviroment
     {

@@ -1,4 +1,4 @@
-﻿namespace CrearAnimales
+﻿namespace CrearAnimales.PresentationLayer
 {
     partial class FrmAnimalCreated
     {

@@ -1,6 +1,4 @@
-﻿using EntitiesLayer.Interfaces;
-
-namespace EntitiesLayer.Interfaces
+﻿namespace CrearAnimales.EntitiesLayer.Interfaces
 {
     public interface IAnimal
     {

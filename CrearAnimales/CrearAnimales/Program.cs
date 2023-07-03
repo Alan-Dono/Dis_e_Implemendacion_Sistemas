@@ -1,12 +1,5 @@
-﻿using System;
-using System.Windows.Forms;
-using EntitiesLayer.ConcretClass;
-using EntitiesLayer.Interfaces;
-using BusinessLogicLayer;
-using EntitiesLayer.ConcretClass.Atmosphere.Enviroment;
-using EntitiesLayer.ConcretClass.atmosphere;
-using EntitiesLayer.ConcretClass.EntityType;
-using EntitiesLayer.Helpers;
+﻿using System.Windows.Forms;
+using CrearAnimales.PresentationLayer;
 
 namespace CrearAnimales
 {

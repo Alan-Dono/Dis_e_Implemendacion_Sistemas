@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace CrearAnimales
+namespace CrearAnimales.PresentationLayer
 {
     partial class FrmAnimalList
     {
@@ -197,7 +197,7 @@ namespace CrearAnimales
             this.Controls.Add(this.dgvAnimals);
             this.Name = "FrmAnimalList";
             this.Text = "FrmAnimalList";
-            
+
             //this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmAnimalList_FormClosed);
             this.Load += new System.EventHandler(this.FrmAnimalList_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvAnimals)).EndInit();

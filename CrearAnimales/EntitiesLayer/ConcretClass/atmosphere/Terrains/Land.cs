@@ -1,11 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using EntitiesLayer.Interfaces;
+﻿using CrearAnimales.EntitiesLayer.Interfaces;
 
-namespace EntitiesLayer.ConcretClass.atmosphere.Terrains
+namespace CrearAnimales.EntitiesLayer.ConcretClass.Atmosphere.Terrains
 {
     public class Land : ITerrains
     {

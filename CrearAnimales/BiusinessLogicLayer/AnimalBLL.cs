@@ -1,10 +1,8 @@
 ﻿using System.Collections.Generic;
-using DataAccesLayer;
-using EntitiesLayer.ConcretClass;
-using EntitiesLayer.Helpers;
-using EntitiesLayer.Interfaces;
+using CrearAnimales.DataAccesLayer;
+using CrearAnimales.EntitiesLayer.ConcretClass.EntityType;
 
-namespace BusinessLogicLayer
+namespace CrearAnimales.BusinessLogicLayer
 {
     public static class AnimalBLL
     {

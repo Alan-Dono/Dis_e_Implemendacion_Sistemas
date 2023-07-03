@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using BusinessLogicLayer;
-using EntitiesLayer.ConcretClass;
+using CrearAnimales.BusinessLogicLayer;
+using CrearAnimales.EntitiesLayer.ConcretClass.EntityType;
 
-namespace CrearAnimales
+namespace CrearAnimales.PresentationLayer
 {
     public partial class FrmAnimalList : Form
     {

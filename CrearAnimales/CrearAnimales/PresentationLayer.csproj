@@ -65,9 +65,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BiusinessLogicLayer\BiusinessLogicLayer.csproj">
+    <ProjectReference Include="..\BiusinessLogicLayer\BusinessLogicLayer.csproj">
       <Project>{19e87cb2-3895-4ca3-85a8-11df23065bed}</Project>
-      <Name>BiusinessLogicLayer</Name>
+      <Name>BusinessLogicLayer</Name>
     </ProjectReference>
     <ProjectReference Include="..\EntitiesLayer\EntitiesLayer.csproj">
       <Project>{7d8ff6ab-f17d-4d8e-bc41-ad47d38b9791}</Project>
