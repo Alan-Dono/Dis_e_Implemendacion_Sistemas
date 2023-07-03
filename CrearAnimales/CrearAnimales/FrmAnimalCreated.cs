@@ -6,6 +6,7 @@ using CrearAnimales.EntitiesLayer.ConcretClass.EntityType;
 using CrearAnimales.EntitiesLayer.ConcretClass.DietTypes;
 using CrearAnimales.EntitiesLayer.ConcretClass.Atmosphere.Enviroment;
 using CrearAnimales.EntitiesLayer.Interfaces;
+using CrearAnimales.BusinessLogicLayer;
 
 namespace CrearAnimales.PresentationLayer
 {
@@ -44,55 +45,38 @@ namespace CrearAnimales.PresentationLayer
         private void CrearAnimal()
         {
             var animal = new Animal();
+
+            // Asignar los valores de los controles al objeto animal
             animal.Especie = txtEspecie.Text;
-            animal.Age = Convert.ToInt32(txtEdad.Text);
-            animal.Weight = Convert.ToInt32(txtPeso.Text);
+            animal.EdadString = txtEdad.Text;
+            animal.PesoString = txtPeso.Text;
             animal.Diet = cmDieta.SelectedItem as IDiet;
             animal.Enviroment = cmHabitat.SelectedItem as IEnviroment;
 
-            // Validar el modelo
-            List<ValidationResult> resultadosValidacion = _animalModel.ValidarObjeto(animal); // Invocar el método Validar en la instancia de Animal
+            // Validar el modelo utilizando las Data Annotations en la clase Animal
+            var validationContext = new ValidationContext(animal);
+            var validationResults = new List<ValidationResult>();
+            bool isValid = Validator.TryValidateObject(animal, validationContext, validationResults, true);
 
-            if (resultadosValidacion.Count > 0)
+            if (!isValid)
             {
                 // Mostrar mensajes de error uno por uno
-                foreach (var resultado in resultadosValidacion)
+                foreach (var validationResult in validationResults)
                 {
-                    MessageBox.Show(resultado.ErrorMessage, "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show(validationResult.ErrorMessage, "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    //break;
                 }
             }
             else
             {
                 // Los datos son válidos, realizar acciones adicionales
+                animal.Age = Convert.ToInt32(animal.EdadString);
+                animal.Weight = Convert.ToInt32(animal.PesoString);
+                // Guardar el animal, mostrar un mensaje, etc.
                 MessageBox.Show("Animal guardado correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                AnimalBLL.AddAnimal(animal);
             }
         }
-
-        /*private void CrearAnimal()
-        {
-            var animal = new Animal();
-            animal.Especie = txtEspecie.Text;
-            animal.Age = Convert.ToInt32(txtEdad.Text);
-            animal.Weight = Convert.ToInt32(txtPeso.Text);
-            animal.Diet = cmDieta.SelectedItem as IDiet;
-            animal.Enviroment = cmHabitat.SelectedItem as IEnviroment;
-            // Validar el modelo
-            List<ValidationResult> resultadosValidacion = _animalModel.ValidarObjeto(animal);
-            if (resultadosValidacion.Count > 0)
-            {
-                // Mostrar mensajes de error uno por uno
-                foreach (var resultado in resultadosValidacion)
-                {
-                    MessageBox.Show(resultado.ErrorMessage, "Error de validación", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    break;
-                }
-            }
-            else
-            {
-                // Los datos son válidos, realizar acciones adicionales
-                MessageBox.Show("Usuario guardado correctamente.", "Información", MessageBoxButtons.OK, MessageBoxIcon.Information);
-            }
-        }*/
 
 
 
